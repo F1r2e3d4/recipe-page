@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+p {
+    font-size: 16px;
+    line-height: 25px;
+}
+h2 {
+    color:hsl(24, 5%, 18%);
+}
+h3, h4 {
+    color: hsl(14, 45%, 36%);
+}
+p ,li {
+    color: hsl(30, 10%, 34%);
+}
+.ingredients h3, .instruction h3 ,.nutrition h3 {
+    font-size: 30px;
+    padding-bottom: 15px;
+}
+body {
+    width: 100%;
+    height: 100%;
+    background-color:hsl(30, 54%, 90%) ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.recipe-container {
+    margin-top: 10px;
+    max-width: 700px;
+    background-color: #fff;
+    padding: 20px 30px;
+    border-radius: 15px;
+}
+.opening-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.opening-image img{
+   max-width: 590px;
+   border-radius: 15px;
+}
+.recipe .title {
+    text-align: start;
+    font-size: 30px;
+    padding: 5px 5px 10px 0;
+}
+.recipe .opening-paragraph {
+    max-width: 580px;
+}
+.preparation-time {
+    margin: 20px 0;
+    padding:20px ;
+    border-radius: 10px;
+    background-color: hsl(330, 100%, 98%);
+}
+.preparation-time .heading {
+    padding-bottom: 15px;
+    color: hsl(332, 51%, 32%);
+    font-size: 18px;
+}
+.preparation-time ul  {
+    padding-left:20px;
+}
+.preparation-time ul li {
+    padding: 10px 10px;
+}
+.preparation-time ul li span {
+    color: hsl(30, 10%, 34%);
+    font-weight: 600;
+}
+
+.ingredients ul {
+    padding-left:20px ;
+}
+.ingredients ul li {
+    padding-left: 10px;
+    padding-top: 10px;
+}
+hr {
+    margin: 30px 0;
+    border-bottom:none;
+    border-left: none;
+    border-right: none;
+    border-top: 1px solid hsl(30, 10%, 34%,0.2);
+}
+.instruction ol {
+    /* padding-left: 20px; */
+    list-style: none;
+}
+.instruction ol li {
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    line-height: 25px;
+}
+.instruction ol li div .number {
+    padding-left: 7px;
+    color:  hsl(14, 45%, 36%);
+}
+.instruction ol li .step {
+    display: flex;
+}
+.instruction ol li .step p {
+    max-width: 560px;
+}
+
+.instruction ol li span {
+   color: hsl(30, 10%, 34%);
+   font-size: 17px;
+   font-weight: 900;
+}
+.nutrition-table {
+   margin: 20px 0;
+}
+.nutrition-table hr {
+   margin: 8px 0 8px 0 ;
+}
+.nutrition-table div {
+   display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0;
+    padding-left: 10px;
+}
+.nutrition-table div .nutrient {
+    padding-left: 20px;
+}
+.nutrition-table div .amount {
+    color: hsl(14, 45%, 36%);
+    font-weight: 1000;
+}
